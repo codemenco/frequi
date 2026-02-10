@@ -163,7 +163,7 @@ const onRowClicked = ({ data: item }) => {
   if (item && item.trade_id !== botStore.activeBot.detailTradeId) {
     botStore.activeBot.setDetailTrade(item);
     if (props.multiBotView) {
-      router.push({ name: 'Freqtrade Trading' });
+      router.push({ name: 'Elvor Trading' });
     }
   } else {
     botStore.activeBot.setDetailTrade(null);

@@ -30,7 +30,7 @@ const handleStopBuy = () => {
   const msg: MsgBoxObject = {
     title: 'Pause - Stop Entering',
     message:
-      'Freqtrade will continue to handle open trades, but will not enter new trades or increase position sizes.',
+      'Elvor will continue to handle open trades, but will not enter new trades or increase position sizes.',
     accept: () => {
       botStore.activeBot.stopBuy();
     },
@@ -94,7 +94,7 @@ const handleForceExit = () => {
       size="large"
       severity="secondary"
       :disabled="!botStore.activeBot.isTrading || !isRunning"
-      title="Pause (StopBuy) - Freqtrade will continue to handle open trades, but will not enter new trades or increase position sizes."
+      title="Pause (StopBuy) - Elvor will continue to handle open trades, but will not enter new trades or increase position sizes."
       @click="handleStopBuy()"
     >
       <template #icon>

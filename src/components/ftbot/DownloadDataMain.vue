@@ -211,7 +211,7 @@ async function startDownload() {
                       placeholder="Select Candle Types"
                     />
                     <small
-                      >When no candle-type is selected, freqtrade will download the necessary candle
+                      >When no candle-type is selected, elvor will download the necessary candle
                       types for regular operation automatically.</small
                     >
                   </div>

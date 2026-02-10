@@ -196,8 +196,8 @@ const drawerVisible = ref(false);
   <header>
     <div class="flex bg-primary-500 border-b border-primary">
       <RouterLink class="ms-2 flex flex-row items-center pe-2 gap-2" exact to="/">
-        <img class="h-[30px] align-middle" src="@/assets/freqtrade-logo.png" alt="Home Logo" />
-        <span class="text-slate-200 text-xl md:hidden lg:inline text-nowrap">Freqtrade UI</span>
+        <img class="h-[30px] align-middle" src="@/assets/elvor-logo.png" alt="Home Logo" />
+        <span class="text-slate-200 text-xl md:hidden lg:inline text-nowrap">Elvor UI</span>
       </RouterLink>
       <div class="flex justify-between w-full text-center items-center ms-3">
         <div class="items-center hidden md:flex gap-5 ms-5">
@@ -319,7 +319,7 @@ const drawerVisible = ref(false);
           >
             <template #container>
               <div class="flex flex-row items-center">
-                <h3 class="text-xl font-bold w-full text-center text-surface-200">Freqtrade UI</h3>
+                <h3 class="text-xl font-bold w-full text-center text-surface-200">Elvor UI</h3>
                 <Button
                   class="float-right mt-1 me-1"
                   variant="outlined"

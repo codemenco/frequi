@@ -113,7 +113,7 @@ jobs:
 
   call-docker-workflow:
     needs: build
-    if: (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'release') && github.repository == 'freqtrade/frequi'
+    if: (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'release') && github.repository == 'elvor/frequi'
     uses: ./.github/workflows/docker.yml
     permissions:
       packages: write  # Needed to push Docker images to ghcr.

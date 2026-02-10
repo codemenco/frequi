@@ -6,7 +6,7 @@ services:
     #   context: .
     #   dockerfile: "./Dockerfile"
     # image: frequi
-    image: freqtradeorg/frequi:latest
+    image: elvororg/frequi:latest
     restart: unless-stopped
     ports:
       - "3000:80"

@@ -10,7 +10,7 @@ assignees: ''
 **FreqUI Version**
 
 - Version of freqUI: _____ (Available in the top right corner of the UI)
-- version of freqtrade: _____ (`freqtrade -V` or `docker compose run --rm freqtrade -V` for Freqtrade running in docker)
+- version of elvor: _____ (`elvor -V` or `docker compose run --rm elvor -V` for Elvor running in docker)
 
 **Describe the bug**
 A clear and concise description of what the bug is.

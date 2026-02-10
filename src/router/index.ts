@@ -12,32 +12,32 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/trade',
-    name: 'Freqtrade Trading',
+    name: 'Elvor Trading',
     component: () => import('@/views/TradingView.vue'),
   },
   {
     path: '/graph',
-    name: 'Freqtrade Graph',
+    name: 'Elvor Graph',
     component: () => import('@/views/ChartsView.vue'),
   },
   {
     path: '/logs',
-    name: 'Freqtrade Logs',
+    name: 'Elvor Logs',
     component: () => import('@/views/LogView.vue'),
   },
   {
     path: '/backtest',
-    name: 'Freqtrade Backtest',
+    name: 'Elvor Backtest',
     component: () => import('@/views/BacktestingView.vue'),
   },
   {
     path: '/dashboard',
-    name: 'Freqtrade Dashboard',
+    name: 'Elvor Dashboard',
     component: () => import('@/views/DashboardView.vue'),
   },
   {
     path: '/balance',
-    name: 'Freqtrade Balance',
+    name: 'Elvor Balance',
     component: () => import('@/components/ftbot/BotBalance.vue'),
   },
   {
@@ -56,7 +56,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/settings',
-    name: 'Freqtrade Settings',
+    name: 'Elvor Settings',
     component: () => import('@/views/SettingsView.vue'),
   },
   {

@@ -70,7 +70,7 @@ jobs:
         context: .
         file: ./docker/Dockerfile
         tags: ${{ steps.meta.outputs.tags }}
-        outputs: type=image,name=freqtradeorg/frequi,push-by-digest=true,name-canonical=true,push=true
+        outputs: type=image,name=elvororg/frequi,push-by-digest=true,name-canonical=true,push=true
 
     - name: Export digest
       env:
@@ -114,8 +114,8 @@ jobs:
       with:
         # list of Docker images to use as base name for tags
         images: |
-          freqtradeorg/frequi
-          ghcr.io/freqtrade/frequi
+          elvororg/frequi
+          ghcr.io/elvor/frequi
         # generate Docker tags based on the following events/attributes
         tags: |
            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
@@ -139,10 +139,10 @@ jobs:
       working-directory: /tmp/digests
       run: |
         docker buildx imagetools create $(jq -cr '.tags | map("-t " + .) | join(" ")' <<< "$DOCKER_METADATA_OUTPUT_JSON") \
-          $(printf 'freqtradeorg/frequi@sha256:%s ' *)
+          $(printf 'elvororg/frequi@sha256:%s ' *)
 
     - name: Inspect image
       env:
         version: ${{ steps.meta.outputs.version }}
       run: |
-        docker buildx imagetools inspect freqtradeorg/frequi:${version}
+        docker buildx imagetools inspect elvororg/frequi:${version}

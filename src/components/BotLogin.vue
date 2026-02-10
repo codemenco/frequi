@@ -199,7 +199,7 @@ onMounted(() => {
         id="username-input"
         v-model="auth.username"
         required
-        placeholder="Freqtrader"
+        placeholder="Elvorr"
         :invalid="nameState === false"
         class="mt-1 block w-full"
         @keydown.enter="handleOk"
@@ -228,9 +228,9 @@ onMounted(() => {
         <span v-if="errorMessageCORS">
           Please also check your bot's CORS configuration:
           <a
-            href="https://www.freqtrade.io/en/latest/rest-api/#cors"
+            href="https://www.elvor.io/en/latest/rest-api/#cors"
             class="text-blue-500 underline"
-            >Freqtrade CORS documentation</a
+            >Elvor CORS documentation</a
           >
         </span>
       </Message>
